@@ -30,7 +30,13 @@ module.exports = (opts = {}) => {
     ctx.session.refresh = () => {
       need_refresh = true;
     };
-    ctx.session.save = ctx.session.regenerate = cb => {
+
+    ctx.session.regenerate = cb => {
+      need_refresh = true;
+      cb();
+    };
+
+    ctx.session.save = cb => {
       cb();
     };
 
