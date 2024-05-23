@@ -1,6 +1,6 @@
 {
   "name": "koa-session2",
-  "version": "2.2.10",
+  "version": "2.2.11",
   "description": "Middleware for Koa2 to get/set session use with custom stores such as Redis or mongodb",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/Secbone/koa-session2.git"
   },
-  "files":[
+  "files": [
     "index.js",
     "libs"
   ],
